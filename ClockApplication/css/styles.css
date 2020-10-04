@@ -1,0 +1,91 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right,#00AAFF, #00FF6C);
+}
+
+.clock {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000000;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, .8);
+    position: relative;
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    background-color: #000000;
+    width: 15px;
+    height: 15px;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.clock .number1 {    --rotation:30deg; }
+.clock .number2 {    --rotation:60deg; }
+.clock .number3 {    --rotation:90deg; }
+.clock .number4 {    --rotation:120deg; }
+.clock .number5 {    --rotation:150deg; }
+.clock .number6 {    --rotation:180deg; }
+.clock .number7 {    --rotation:210deg; }
+.clock .number8 {    --rotation:240deg; }
+.clock .number9 {    --rotation:270deg; }
+.clock .number10 {    --rotation:300deg; }
+.clock .number11 {    --rotation:330deg; }
+
+.clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+}
+
+.clock .hand.second {
+    width: 3px;
+    height: 45%;
+    background-color: rgb(231, 23, 23);
+}
+
+.clock .hand.minute {
+    width: 7px;
+    height: 40%;
+    background-color: #000000;
+}
+
+.clock .hand.hour {
+    width: 10px;
+    height: 35%;
+    background-color: #000000;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <section class="location">
+        <h1 class="location-timezone" data-loc-timezone>Timezone</h1>
+        <p data-icon>Icon</p>
+    </section>
+    <section class="region">
+        <h1 class="region" data-region>Region</h1>
+    </section>
+    <section class="temperature">
+        <section class="degree-section">
+            <h2 class="temperature-degree" data-temp-degree></h2>
+            <span data-temp-notion>C</span>
+        </section>        
+        <section class="temperature-description" data-temp-description>
+            It's raining cats & dogs
+        </section>
+    </section>
+    <script src="app/app.js"></script>
+</body>
+</html>

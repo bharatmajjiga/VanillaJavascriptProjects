@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right,#00AAFF, #00FF6C);
+}
+
+.button {
+    width: 90px;
+    height: 90px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 1px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .9);
+    border: none;
+    outline: none;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.button.clear {
+    width: 185px;
+}
+
+.button.equals {
+    width: 185px;
+}
+
+.display {
+    width: 360px;
+    height: 80px;
+    margin: 5px;   
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.75);
+    outline: none;
+    border: none;
+}
+
+.main {
+    width: 20%;
+    margin: 150px auto;
+    height: 100%;
+}

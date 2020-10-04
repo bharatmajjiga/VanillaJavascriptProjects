@@ -1,0 +1,112 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3c795a;
+}
+
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.app {
+  margin: 100px 50px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.choose-time {
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.choose-time .time {
+  padding: 25px 50px;
+  border: 2px solid #ffffff;
+  background: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.timer {
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.timer .timer-icon {
+  flex: 3;
+  align-self: center;
+  position: relative;
+}
+
+.timer .timer-icon .timer-play, .timer .timer-icon .timer-pause {
+  position: absolute;
+  top: 5%;
+  left: 38%;
+  width: 40%;
+  cursor: pointer;
+}
+
+.timer .timer-icon .timer-pause {
+  cursor: pointer;
+  display: none;
+  top: 3%;
+  left: 31%;
+}
+
+.timer .timer-icon img {
+  height: 40vh;  
+}
+
+.timer .timer-countdown {
+  flex: 1;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.weather {
+  /* border: 1px solid #000000; */
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weather .weather-rain, .weather .weather-beach {
+  padding: 50px;
+  border-radius: 150px;
+  align-self: center;
+}
+
+.weather .weather-rain {
+  cursor: pointer;
+  background-color: rgba(58, 58, 182, 0.8);
+}
+
+.weather .weather-beach {
+  cursor: pointer;
+  background-color: rgba(153, 46, 46, 0.8);
+}
+
+.weather .weather-rain img, .weather .weather-beach img {
+  width: 70px;
+}

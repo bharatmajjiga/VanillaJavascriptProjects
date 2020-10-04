@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Meditation App</title>
+</head>
+<body>
+
+  <video loop class="myVideo" src="video/beach.mp4"></video>
+  <audio loop class="myAudio" src="sounds/beach.mp3"></audio>
+  <section class="app">
+    <section class="choose-time">
+      <button data-set-minutes="2" class="time">2 Minutes</button>
+      <button data-set-minutes="5" class="time">5 Minutes</button>
+      <button data-set-minutes="10" class="time">10 Minutes</button>      
+    </section>
+    <section class="timer">
+      <section class="timer-icon">
+        <img class="timer-outline" src="svg/track-outline.svg" alt="track outline">
+        <img class ="timer-play" src="svg/play.svg" alt="play icon">
+        <img class ="timer-pause" src="svg/pause.svg" alt="pause icon">
+      </section>
+      <section class="timer-countdown">
+        <span data-minutes>5</span>:
+        <span data-seconds>00</span></section>
+    </section>
+    <section class="weather">
+      <section class="weather-icons weather-rain">
+        <img src="svg/rain.svg" alt="rain logo">
+      </section>
+      <section class="weather-icons weather-beach">
+        <img src="svg/beach.svg" alt="beach logo">
+      </section>
+    </section>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>

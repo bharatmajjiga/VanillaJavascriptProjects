@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, rgb(46, 46, 136), rgb(26, 179, 26));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container {
+    border: 2px solid #000000;
+    margin: 100px auto;
+    width: 30%;
+    height: 60vh;
+    background: #ffffff;
+}
+
+.container span {
+    background: cornflowerblue;
+}
+
+.container span:hover {
+    background: rgb(85, 115, 172);
+}
+
+.output {
+    color: #ffffff;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 10px;
+    background: #363535;
+    height: 12vh;
+    pointer-events: none;
+}
+
+.state, .result {
+    height: 50%;
+    pointer-events: none;
+}
+
+.op1, .op, .op2 {
+    height: 9vh;
+    margin-top: 3px;
+}
+
+.op1 span, .op span, .op2 span {
+    line-height: 9vh;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.op1 span:first-of-type {
+    width: 46%;
+}
+
+.op1 span:nth-of-type(2) {
+    width: 25%;
+}
+
+.op1 span:last-of-type {
+    width: 25%; 
+}
+
+.op span {
+    width: 24%;    
+}
+
+.op span:first-of-type, .op2 span:first-of-type {
+    margin-left: 3px;
+}
+
+.op1 span:first-of-type {
+    margin-left: 5px;
+}
+
+.op2 span:first-of-type, .op2 span:nth-of-type(2) {
+    width: 24%;
+}
+
+.op2 span:last-of-type {
+    width: 49%;
+}
